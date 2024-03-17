@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    body {
+    font-family: Arial, sans-serif;
+    background:url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yNTJiYXRjaDItYWRqLTA1XzIta3phdTMzZmUuanBn.jpg');
+    margin: 0;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+h3 {
+    color: #0d0d0d;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+.container{
+    margin-top: 10%;
+}
+.search {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.search:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Enter the name of celebrity that you want to know</h3>
+    
+    <form action="/celebdata" method="post">
+        <input type="text" placeholder="Search for celeb" name="celebname" class="search">
+    </form>
+    </div>
+        
+    
+</body>
+</html>

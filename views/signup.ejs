@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign_up</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        margin: 0;
+        padding: 0;
+        background-image: url('https:t4.ftcdn.net/jpg/02/01/91/53/360_F_201915398_SQBmS16UbAS5Mc5tNr7GDtzL9pnxntz6.jpg');
+      }
+      h1{
+        background-color: white;
+        border: 2px solid black;
+        text-align: center;
+        margin-left: 380px;
+        width: 50%;
+      }
+.container {
+    margin: auto;
+    width: 50%;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #6a6464;
+    box-sizing: border-box;
+}
+form{
+  padding: 50px;
+  margin: 0 200px;
+  background-color: rgb(254, 253, 249);
+}
+button {
+    background-color: #121412;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+  <h1>Sign Up</h1>
+    <form action="/signup"  method="post">
+        <div class="container">
+    
+          <label for="firstname"><b>First_Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="first_name" required><br>
+        
+        <label for="lastname"><b>Last_Name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="last_name" required><br>
+        
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required><br>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required><br>
+  
+        <label>
+          <input type="checkbox" checked="checked"id="remember"> Remember me
+        </label>
+        
+    
+        <div class="clearfix">
+          <button type="submit" class="signup">Sign Up</button>
+        </div>
+
+        <a href="/signin">LOGIN</a>
+      </div>
+    </form>
+</body>
+</html>

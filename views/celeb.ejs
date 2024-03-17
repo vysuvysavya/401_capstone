@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celeb</title>
+    <style>
+        .data{
+            width: 30%;
+            margin-left: 20%;
+            border: 2px solid rgb(62, 60, 60);
+            padding: 10%;
+        }
+    </style>
+</head>
+<body>
+    <main id="main">
+        <div class="data">
+            <H2>Here's the info of the <%=cd[0]%></H2>
+            <% if(cd.length > 0) { %>
+                <p>Name : <%=cd[0]%> </p>
+                <p>Net-Worth : <%=cd[1]%> </p>
+                <p>Gender : <%=cd[2]%> </p>
+                <p>Nationality : <%=cd[3]%> </p>
+                <p>Occupation : <%=cd[4][0]%> </p>
+                <p>Height : <%=cd[5]%> </p>
+                <p>Date of Birth : <%=cd[6]%> </p>
+            <% } else { %>
+                <p>No celebrity data found.</p>
+            <% } %>
+        </div>
+        
+    </main>
+
+</body>
+</html>
